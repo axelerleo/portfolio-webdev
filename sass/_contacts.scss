@@ -1,0 +1,78 @@
+.contacts {
+  &__header {
+    height: 40vh;
+  }
+  &__container {
+    display: grid;
+    width: 60%;
+    height: 40vh;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: repeat(3, 12rem);
+    margin: 10rem auto;
+    grid-gap: 2rem;
+
+    align-items: center;
+    &-text {
+      font-size: 4rem;
+    }
+  }
+}
+
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+
+  a {
+    text-decoration: none !important;
+    color: $basic-light-color;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+
+    i {
+      position: relative;
+      z-index: 3;
+    }
+
+    &.email {
+      background-color: $email-color;
+    }
+
+    &.skype {
+      background-color: $skype-color;
+    }
+
+    &.github {
+      background-color: $github;
+    }
+  }
+}
+
+/* egeon effect */
+.effect.egeon {
+  a {
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+
+    i {
+      transition: transform 0.2s linear 0s;
+    }
+
+    &:hover {
+      transform: rotate(-90deg);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+
+      i {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

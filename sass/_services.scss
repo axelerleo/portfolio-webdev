@@ -1,0 +1,40 @@
+.services {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: max-content;
+  &__text {
+    font-size: 2rem;
+  }
+  align-content: center;
+}
+.avatar {
+  height: 35rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 3px 2px 17px 0px rgba(50, 50, 50, 0.9);
+  -webkit-clip-path: polygon(
+    50% 0,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0 60%,
+    10% 20%
+  );
+  clip-path: polygon(
+    50% 0,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0 60%,
+    10% 20%
+  );
+}
+
+.avatar-wrapper {
+  filter: drop-shadow(-0 0 6px rgba(50, 50, 0, 0.7));
+}

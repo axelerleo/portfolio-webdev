@@ -1,0 +1,146 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  grid-template-rows: 6rem repeat(9, max-content) 6rem;
+}
+
+.parallax {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+.block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h3 {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  //color: $color-primary;
+  font-weight: 400;
+  padding-bottom: 10vh;
+  padding-top: 11vh;
+}
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+
+  filter: brightness(65%);
+}
+
+.text-parallax {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  //left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+
+.home,
+.about,
+.services,
+.portfolio,
+.download,
+.partners,
+.contacts {
+  width: 100%;
+}
+
+.modal {
+  z-index: 500;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+
+  &__img {
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+  }
+  &__cross {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    fill: #aaa;
+    cursor: pointer;
+    z-index: 600;
+
+    &:hover {
+      fill: #ddd;
+    }
+  }
+}
+
+.modal.active {
+  // display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.fs-iframe iframe {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
