@@ -5,10 +5,10 @@
   &__container {
     display: grid;
     width: 60%;
-    height: 40vh;
+    min-height: 40vh;
     grid-template-columns: 12rem 1fr;
-    grid-template-rows: repeat(3, 12rem);
-    margin: 10rem auto;
+    grid-template-rows: repeat(4, 7rem);
+    margin: 5rem auto;
     grid-gap: 2rem;
 
     align-items: center;
@@ -51,6 +51,10 @@
 
     &.github {
       background-color: $github;
+    }
+
+    &.phone {
+      background-color: green;
     }
   }
 }

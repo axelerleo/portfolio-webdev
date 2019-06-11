@@ -171,6 +171,9 @@ body {
   .btn__text {
     font-size: 1.6rem;
     text-transform: uppercase; }
+  .btn--main {
+    display: inline-block;
+    text-decoration: none; }
 
 .mb-1 {
   margin-bottom: 1rem; }
@@ -414,9 +417,13 @@ body {
   align-content: center; }
   .services__text {
     font-size: 2rem; }
+  .services__list {
+    font-size: 2rem;
+    margin-left: 10rem;
+    font-family: "Roboto", sans-serif; }
 
 .avatar {
-  height: 35rem;
+  height: 40rem;
   margin-left: 5rem;
   margin-right: 5rem;
   justify-self: center;
@@ -426,7 +433,63 @@ body {
   clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%); }
 
 .avatar-wrapper {
-  filter: drop-shadow(0 0 6px rgba(50, 50, 0, 0.7)); }
+  filter: drop-shadow(0 0 6px rgba(50, 50, 0, 0.7));
+  align-self: center; }
+
+.tabs {
+  width: 80rem;
+  padding: 0px;
+  margin: 3rem 10rem;
+  position: relative;
+  border: 1px solid #dee8f2;
+  font-size: 1.5rem; }
+
+.tabs section {
+  display: none;
+  padding: 15px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 180px; }
+
+.tabs p {
+  margin: 0; }
+
+.tabs input {
+  display: none; }
+
+.tabs label {
+  display: block;
+  width: 18rem;
+  padding: 1.5rem;
+  color: #4f5966;
+  background: #dee8f2;
+  cursor: pointer; }
+
+.tabs input:checked + label {
+  color: white;
+  background: #3b801c; }
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block; }
+
+.tabs section {
+  animation: scale 0.7s ease-in-out; }
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0; }
+  50% {
+    transform: scale(1.005);
+    opacity: 0.5; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
 
 .about__header {
   height: 40vh; }
@@ -444,6 +507,9 @@ body {
   align-items: center; }
   .about__container-text {
     font-size: 2rem; }
+
+#myCanvasContainer {
+  margin: 5rem; }
 
 .portfolio {
   position: static; }
@@ -633,10 +699,10 @@ body {
 .contacts__container {
   display: grid;
   width: 60%;
-  height: 40vh;
+  min-height: 40vh;
   grid-template-columns: 12rem 1fr;
-  grid-template-rows: repeat(3, 12rem);
-  margin: 10rem auto;
+  grid-template-rows: repeat(4, 7rem);
+  margin: 5rem auto;
   grid-gap: 2rem;
   align-items: center; }
   .contacts__container-text {
@@ -667,6 +733,8 @@ body {
       background-color: #00aced; }
     .effect a.github {
       background-color: #000; }
+    .effect a.phone {
+      background-color: green; }
 
 /* egeon effect */
 .effect.egeon a {

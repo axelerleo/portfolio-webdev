@@ -80,6 +80,11 @@
     font-size: 1.6rem;
     text-transform: uppercase;
   }
+
+  &--main {
+    display: inline-block;
+    text-decoration: none;
+  }
 }
 
 .mb-1 {

@@ -6,10 +6,15 @@
   &__text {
     font-size: 2rem;
   }
+  &__list {
+    font-size: 2rem;
+    margin-left: 10rem;
+    font-family: $font-paragraph;
+  }
   align-content: center;
 }
 .avatar {
-  height: 35rem;
+  height: 40rem;
   margin-left: 5rem;
   margin-right: 5rem;
   justify-self: center;
@@ -37,4 +42,66 @@
 
 .avatar-wrapper {
   filter: drop-shadow(-0 0 6px rgba(50, 50, 0, 0.7));
+  align-self: center;
+}
+
+//list of available sites
+.tabs {
+  width: 80rem;
+  padding: 0px;
+  margin: 3rem 10rem;
+  position: relative;
+  border: 1px solid #dee8f2;
+  font-size: 1.5rem;
+}
+.tabs section {
+  display: none;
+  padding: 15px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+.tabs p {
+  margin: 0;
+}
+.tabs input {
+  display: none;
+}
+.tabs label {
+  display: block;
+  width: 18rem;
+  padding: 1.5rem;
+  // font-size: 1.5rem;
+  color: #4f5966;
+  background: #dee8f2;
+  cursor: pointer;
+}
+.tabs input:checked + label {
+  color: white;
+  background: $color-secondary;
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+.tabs section {
+  animation: scale 0.7s ease-in-out;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.005);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
