@@ -20,5 +20,12 @@
 }
 
 #myCanvasContainer {
-  margin: 5rem;
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 100%;
+  background: radial-gradient(
+    at center center,
+    rgba(60, 128, 28, 0.08),
+    rgba(60, 128, 28, 0.3)
+  );
 }
