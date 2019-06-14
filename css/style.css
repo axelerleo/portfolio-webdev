@@ -422,6 +422,24 @@ body {
     margin-left: 10rem;
     font-family: "Roboto", sans-serif; }
 
+.services__card {
+  display: flex;
+  min-height: 24rem; }
+  .services__card--image {
+    width: 30rem;
+    margin-right: 2rem; }
+  .services__card--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50rem; }
+  .services__card--description {
+    margin-bottom: 3rem; }
+  .services__card--price {
+    align-self: flex-end;
+    font-size: 3rem;
+    color: #3b801c; }
+
 .avatar {
   height: 40rem;
   margin-left: 5rem;
@@ -437,12 +455,13 @@ body {
   align-self: center; }
 
 .tabs {
-  width: 80rem;
+  width: 110rem;
   padding: 0px;
   margin: 3rem 10rem;
   position: relative;
   border: 1px solid #dee8f2;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif; }
 
 .tabs section {
   display: none;
@@ -451,9 +470,6 @@ body {
   position: absolute;
   top: 0;
   left: 180px; }
-
-.tabs p {
-  margin: 0; }
 
 .tabs input {
   display: none; }
@@ -490,6 +506,9 @@ body {
   100% {
     transform: scale(1);
     opacity: 1; } }
+
+.services__wrapper {
+  display: flex; }
 
 .about__header {
   height: 40vh; }
