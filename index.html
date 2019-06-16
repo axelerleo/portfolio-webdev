@@ -1,711 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900i&display=swap&subset=cyrillic,cyrillic-ext"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900i&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Alexey Leonov web developer</title>
-    <script src="js/tagcanvas.js"></script>
-    <script src="js/luxy.js"></script>
-    <script src="js/smooth-scrollbar.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
 
-  <body>
-    <div class="up_down_btn" title="Наверх">
-      <svg
-        class="sidebar__arrows"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        xml:space="preserve"
-      >
-        <path
-          d="M216.988 279.882l294.528 336.045 294.537-336.014 152.363-11.93-446.9 509.812-446.892-509.812 152.364 11.899z"
-          fill="green"
-        />
-      </svg>
-    </div>
-    <main id="luxy">
-      <div class="container">
-        <header class="header">
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link"
-                ><span class="rus">Домашняя</span>
-                <span class="english">Home</span></a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#anchor-about" class="menu__link"
-                ><span class="rus">Обо мне</span>
-                <span class="english">About</span></a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#anchor-services" class="menu__link"
-                ><span class="rus">Услуги</span>
-                <span class="english">Services</span></a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#anchor-portfolio" class="menu__link"
-                ><span class="rus">Портфолио</span>
-                <span class="english">Portfolio</span></a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#anchor-contacts" class="menu__link"
-                ><span class="rus">Контакты</span>
-                <span class="english">Contacts</span></a
-              >
-            </li>
-          </ul>
+  <title>Alexey Leonov web developer</title>
+  <script src="js/tagcanvas.js"></script>
+  <script src="js/luxy.js"></script>
+  <script src="js/smooth-scrollbar.js"></script>
+</head>
 
-          <div class="ru-eng">
-            <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
-            <div class="lang-btn eng-btn" lang=".english">Eng</div>
-          </div>
-        </header>
+<body>
+  <div class="up_down_btn" title="Наверх">
+    <svg class="sidebar__arrows" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xml:space="preserve">
+      <path d="M216.988 279.882l294.528 336.045 294.537-336.014 152.363-11.93-446.9 509.812-446.892-509.812 152.364 11.899z"
+        fill="green" />
+    </svg>
+  </div>
+  <main id="luxy">
+    <div class="container">
+      <header class="header">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link"><span class="rus">Домашняя</span>
+              <span class="english">Home</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#anchor-about" class="menu__link"><span class="rus">Обо мне</span>
+              <span class="english">About</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#anchor-services" class="menu__link"><span class="rus">Услуги</span>
+              <span class="english">Services</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#anchor-portfolio" class="menu__link"><span class="rus">Портфолио</span>
+              <span class="english">Portfolio</span></a>
+          </li>
+          <li class="menu__item">
+            <a href="#anchor-contacts" class="menu__link"><span class="rus">Контакты</span>
+              <span class="english">Contacts</span></a>
+          </li>
+        </ul>
+        <div class="header__contacts">
+          <span class="rus"><i class="fa fa-phone fa-7x"></i><i class="fa fa-whatsapp fa-7x"></i> +7 (989)-293-34-09</span>
+          <span class="english"></span>
+        </div>
+        <div class="ru-eng">
+          <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
+          <div class="lang-btn eng-btn" lang=".english">Eng</div>
+        </div>
+      </header>
 
-        <section class="home">
-          <div class="home__header">
-            <h2 class="heading-1">
-              <span class="rus">Привет! Я Алексей Леонов, веб-разработчик</span>
-              <span class="english">Hi! I'm Alexey Leonov, web-developer</span>
-            </h2>
-            <h3 class="heading-4 mt-1">
-              <span class="rus"
-                >Готовлю вкуснейшие сайты по лучшим рецептам со всего мира</span
-              >
-              <span class="english"
-                >I cook delicious websites according the best recipes from all
-                over the world
-              </span>
-            </h3>
-            <a href="#anchor-contacts" class="btn btn--main btn__text mt-hg ">
-              <span class="rus">Связаться со мной </span>
-              <span class="english">Get in touch</span>
-            </a>
-          </div>
-          <svg class="home__arrows">
-            <path class="a1" d="M0 0 L50 32 L100 0"></path>
-            <path class="a2" d="M0 20 L50 52 L100 20"></path>
-          </svg>
-        </section>
-        <section class="services">
-          <div class="services__container">
-            <p class="services__text paragraph black mb-sm">
-              <span class="rus">
-                Я с радостью готов помочь Вам в разработке сайтов и
-                веб-приложений - от простой верстки по макету до сайта под ключ!
-                Моя основная специализация - фронтэнд и верстка. Я могу
-                разработать Вам современный сайт с адаптивным дизайном, который
-                будет одинаково привлекательно смотреться на большинстве
-                устройств, будь то ПК, планшет или смартфон.
-              </span>
-              <span class="english"> </span>
-            </p>
+      <section class="home">
+        <div class="home__header">
+          <h2 class="heading-1">
+            <span class="rus">Привет! Я Алексей Леонов, веб-разработчик</span>
+            <span class="english">Hi! I'm Alexey Leonov, web-developer</span>
+          </h2>
+          <h3 class="heading-4 mt-1">
+            <span class="rus">Готовлю вкуснейшие сайты по лучшим рецептам со всего мира</span>
+            <span class="english">I cook delicious websites according the best recipes from all
+              over the world
+            </span>
+          </h3>
+          <a href="#anchor-contacts" class="btn btn--main btn__text mt-hg ">
+            <span class="rus">Связаться со мной </span>
+            <span class="english">Get in touch</span>
+          </a>
+        </div>
+        <svg class="home__arrows">
+          <path class="a1" d="M0 0 L50 32 L100 0"></path>
+          <path class="a2" d="M0 20 L50 52 L100 20"></path>
+        </svg>
+      </section>
+      <section class="services">
+        <div class="services__container">
+          <p class="services__text paragraph black mb-sm">
+            <span class="rus">
+              Я с радостью готов помочь Вам в разработке сайтов и
+              веб-приложений - от простой верстки по макету до сайта под ключ!
+              Моя основная специализация - фронтэнд и верстка. Я могу
+              разработать Вам современный сайт с адаптивным дизайном, который
+              будет одинаково привлекательно смотреться на большинстве
+              устройств, будь то ПК, планшет или смартфон.
+            </span>
+            <span class="english"> I am happy to help You in the development of websites and web applications - from
+              simple layout to turnkey website!
+              My main specialization is front-end and layout. I can develop You a modern website with an adaptive
+              design that will look equally attractive on most devices, be it a PC, tablet or smartphone.</span>
+          </p>
 
-            <p class="services__text paragraph black mb-sm">
-              <span class="rus"
-                >Вот основной перечень сайтов, которые я могу для Вас
-                сделать:</span
-              >
-              <span class="english"></span>
-            </p>
+          <p class="services__text paragraph black mb-sm">
+            <span class="rus">Вот основной перечень сайтов, которые я могу для Вас
+              сделать:</span>
+            <span class="english">Here is a basic list of sites that I can do for You:</span>
+          </p>
 
-            <div class="tabs black">
-              <input id="tab1" type="radio" name="tabs" checked />
-              <label for="tab1">Landing page</label>
-              <input id="tab2" type="radio" name="tabs" />
-              <label for="tab2">Сайт визитка</label>
-              <input id="tab3" type="radio" name="tabs" />
-              <label for="tab3">Блог</label>
-              <input id="tab4" type="radio" name="tabs" />
-              <label for="tab4">Интернет-магазин</label>
-              <input id="tab5" type="radio" name="tabs" />
-              <label for="tab5">Корпоративный сайт</label>
-              <section id="content1" class="">
-                <div class="services__card ">
-                  <img
-                    src="img/site-lp.jpg"
-                    alt=""
-                    class="services__card--image "
-                  />
-                  <div class="services__card--text">
-                    <p class="services__card--description">
-                      Лендинг пейдж (от англ. landing page – целевая страница) –
-                      сайт, который состоит из одной страницы, заточенный под
-                      одно действие: получить контакт или продать товар/услугу
-                    </p>
-                    <h4 class="services__card--price">от 4500р</h4>
-                  </div>
+          <div class="tabs black">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <label for="tab1">
+              <span class="rus">Landing page</span><span class="english">Landing page</span></label>
+            <input id="tab2" type="radio" name="tabs" />
+            <label for="tab2">
+              <span class="rus">Сайт визитка</span><span class="english">Site-card/span></label>
+            <input id="tab3" type="radio" name="tabs" />
+            <label for="tab3">
+              <span class="rus">Блог</span><span class="english">Blog</span></label>
+            <input id="tab4" type="radio" name="tabs" />
+            <label for="tab4">
+              <span class="rus">Интернет-магазин</span><span class="english">Online store</span></label>
+            <input id="tab5" type="radio" name="tabs" />
+            <label for="tab5">
+              <span class="rus">Корпоративный сайт</span><span class="english">Enterprise portal</span></label>
+            <section id="content1" class="">
+              <div class="services__card ">
+                <img src="img/site-lp.jpg" alt="" class="services__card--image " />
+                <div class="services__card--text">
+                  <p class="services__card--description">
+                    <span class="rus">Landing page - одностраничный сайт, основная цель которого
+                      - продать конкретный товар/услугу, или получить контакты.
+                      Чаще всего строятся из ключевых блоков - главный экран,
+                      преимущества, отзывы, УТП и так далее. Цена складывается
+                      из сложности верстки, количества блоков и эффектов,
+                      наличия мобильной версии и адаптивной верстки.</span>
+                    <span class="english">Landing page is a one-page website, the main purpose of which is to sell a
+                      particular product/service, or get contacts.
+                      Most often built from key blocks - the main screen, benefits, reviews, USP, and so on. The price
+                      consists of the complexity of the layout, the number of blocks and effects, the availability of a
+                      mobile version and adaptive layout.</span>
+                  </p>
+                  <h4 class="services__card--price"><span class="rus">от 4500р</span>
+                    <span class="english">from 75$</span></h4>
                 </div>
-              </section>
-              <section id="content2">
-                <div class="services__card">
-                  <img
-                    src="img/site-card.jpg"
-                    alt=""
-                    class="services__card--image"
-                  />
-                  <div class="services__card--text">
-                    <p class="services__card--description">
-                      Сайт визитка – это представительский сайт небольших
+              </div>
+            </section>
+            <section id="content2">
+              <div class="services__card">
+                <img src="img/site-card.jpg" alt="" class="services__card--image" />
+                <div class="services__card--text">
+                  <p class="services__card--description">
+
+                    <span class="rus">Сайт визитка – это представительский сайт небольших
                       размеров с информацией об организации, фирме, компании или
                       частном лице. Сайт-визитка дает основную информацию о
-                      компании: род деятельности, товары/услуги, цены, контакты
-                    </p>
-                    <h4 class="services__card--price">от 3500р</h4>
-                  </div>
+                      компании: род деятельности, товары/услуги, цены, контакты</span>
+                    <span class="english">A business card is a small-sized representative website with information
+                      about an organization or a private person. Business card website gives basic information about
+                      the company: occupation, goods/services, prices, contacts.</span>
+                  </p>
+                  <h4 class="services__card--price"><span class="rus">от 3000р</span>
+                    <span class="english">from 50$</span></h4>
                 </div>
-              </section>
-              <section id="content3">
-                <div class="services__card">
-                  <img
-                    src="img/site-blog.jpg"
-                    alt=""
-                    class="services__card--image"
-                  />
-                  <div class="services__card--text">
-                    <p class="services__card--description">
-                      Блог – это сайт с динамически добавляемыми статьями
-                      (постами). Как правило, блог создается при помощи CRM -
-                      например, Wordpress или Joomla.
-                    </p>
-                    <h4 class="services__card--price">от 7000р</h4>
-                  </div>
-                </div>
-              </section>
-              <section id="content4">
-                <div class="services__card">
-                  <img
-                    src="img/site-store.jpg"
-                    alt=""
-                    class="services__card--image"
-                  />
-                  <div class="services__card--text">
-                    <p class="services__card--description">
-                      Интернет-магазин – современный инструмент для ведения
-                      своего бизнеса в виртуальном пространстве. Это сайт,
-                      посредством которого можно продавать товары через
-                      интернет. Чаще всего интернет-магазин позволяет
-                      ознакомиться с товарами и ценами и оформить заказ онлайн.
-                    </p>
-                    <h4 class="services__card--price">от 25000р</h4>
-                  </div>
-                </div>
-              </section>
-              <section id="content5">
-                <div class="services__card">
-                  <img
-                    src="img/site-corp.png"
-                    alt=""
-                    class="services__card--image"
-                  />
-                  <div class="services__card--text">
-                    <p class="services__card--description">
-                      Корпоративный сайт - виртуальное лицо бизнеса. На данном
-                      ресурсе содержится вся информация о компании, о
-                      производимых ей продуктах и о сфере деятельности в целом.
-                      Корпортаивный сайт может содержать в своём составе
-                      онлайн-калькуляторы, каталоги, прайсы, а также целый
-                      перечень сервисов.
-                    </p>
-                    <h4 class="services__card--price">от 50000р</h4>
-                  </div>
-                </div>
-              </section>
-            </div>
+              </div>
+            </section>
+            <section id="content3">
+              <div class="services__card">
+                <img src="img/site-blog.jpg" alt="" class="services__card--image" />
+                <div class="services__card--text">
+                  <p class="services__card--description">
 
-            <p class="services__text paragraph black mb-sm">
-              <span class="rus"
-                >Не нашли того, что хотели, в списке? Не беда! Свяжитесь со мной
-                любым удобным для Вас способом, и мы обсудим Ваш проект.</span
-              >
-              <span class="english"> </span>
-            </p>
-            <p class="services__text paragraph black mb-sm">
-              <span class="rus"
-                >Чтобы Ваш сайт выгодно отличался от конкурентов, я могу
-                предложить множество современных и стильных эффектов - плавные
-                анимации, параллакс, галереи и слайдеры, и многое другое!</span
-              >
-              <span class="english"></span>
-            </p>
-            <p class="services__text paragraph black mb-sm">
-              <span class="rus"
-                >Если Вы представляете веб-студию, и ищете фрилансера для
-                верстки, разработки сайтов или веб-приложений, я к Вашим
-                услугам. Ниже Вы можете найти некоторые подробности о
-                технологиях и стеке, который я применяю в работе. Если же Вам
-                важен результат, а не "технические штучки" - смело листайте
-                дальше, в раздел Портфолио!
+                    <span class="rus">Блог – это информационный сайт, и его основная ценность - контент. Бывают
+                      корпоративные блоги, освещающие новости и события компании, или тематические блоги, посвященные
+                      конкретной теме. Цена разработки блога зависит от сложности структуры, пожеланий по визуальному
+                      оформлению и дополнительной функциональности.</span>
+                    <span class="english">A blog is an informational site, and its main value is content. There are
+                      corporate blogs covering news and events of the company, or thematic blogs devoted to a specific
+                      topic. The price of developing a blog depends on the complexity of the structure, wishes for
+                      visual design and additional functionality.</span>
+                  </p>
+                  <h4 class="services__card--price"><span class="rus">от 7000р</span>
+                    <span class="english">from 120$</span></h4>
+                </div>
+              </div>
+            </section>
+            <section id="content4">
+              <div class="services__card">
+                <img src="img/site-store.jpg" alt="" class="services__card--image" />
+                <div class="services__card--text">
+                  <p class="services__card--description">
+
+                    <span class="rus">Интернет-магазин – это специализированный сайт, предназначенный для
+                      онлайн-торговли. На нем есть возможность просмотра цен, описания товаров или услуг, оформления
+                      заказа или покупки. Часто используются платежные системы, позволяющие оплатить товар банковской
+                      картой или электронной валютой.</span>
+                    <span class="english">Online store is a specialized website designed for online trading. It has the
+                      ability to view prices, descriptions of goods or services, ordering or buying. Often used payment
+                      systems that allow you to pay for the goods by credit card or e-currency.</span>
+                  </p>
+                  <h4 class="services__card--price"><span class="rus">от 25000р</span>
+                    <span class="english">from 450$</span></h4>
+                </div>
+              </div>
+            </section>
+            <section id="content5">
+              <div class="services__card">
+                <img src="img/site-corp.png" alt="" class="services__card--image" />
+                <div class="services__card--text">
+                  <p class="services__card--description">
+
+                    <span class="rus">Корпоративный портал представляет собой сложный сайт с закрытыми разделами для
+                      сотрудников и клиентов, различными сервисами, информацией о компании, каталогом товаров и услуг.
+                      Чаще всего тесно интегрируется с другими бизнес-инструментами, такими как электронная почта,
+                      мессенджеры, мобильные приложения, системы учета и т.п.</span>
+                    <span class="english">Corporate portal is a complex site with closed sections for employees and
+                      customers, various services, information about the company, catalog of goods and services. Most
+                      often, it is closely integrated with other business tools, such as e-mail, messengers, mobile
+                      applications, accounting systems, etc.</span>
+                  </p>
+                  <h4 class="services__card--price"><span class="rus">от 50000р</span>
+                    <span class="english">from 990$</span></h4>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <p class="services__text paragraph black mb-sm">
+            <span class="rus">Не нашли того, что хотели, в списке? Не беда! Свяжитесь со мной
+              любым удобным для Вас способом, и мы обсудим Ваш проект.</span>
+            <span class="english"> </span>
+          </p>
+          <p class="services__text paragraph black mb-sm">
+            <span class="rus">Чтобы Ваш сайт выгодно отличался от конкурентов, я могу
+              предложить множество современных и стильных эффектов - плавные
+              анимации, параллакс, галереи и слайдеры, и многое другое!</span>
+            <span class="english"></span>
+          </p>
+          <p class="services__text paragraph black mb-sm">
+            <span class="rus">Если Вы представляете веб-студию, и ищете фрилансера для
+              верстки, разработки сайтов или веб-приложений, я к Вашим
+              услугам. Ниже Вы можете найти некоторые подробности о
+              технологиях и стеке, который я применяю в работе. Если же Вам
+              важен результат, а не "технические штучки" - смело листайте
+              дальше, в раздел Портфолио!
+            </span>
+            <span class="english"></span>
+          </p>
+        </div>
+        <div class="avatar-wrapper">
+          <img src="./img/avatar.jpg" alt="" class="avatar" />
+        </div>
+      </section>
+
+      <section class="portfolio" id="anchor-portfolio">
+        <div class="parallax portfolio__header">
+          <div class="block">
+            <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" />
+            <h3 data-speed="-2" class="heading-3 text-parallax">
+              <span class="rus">Портфолио</span>
+              <span class="english">Portfolio</span>
+            </h3>
+          </div>
+        </div>
+        <div class="portfolio-container">
+          <div class="projects-container">
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">Slick</div>
+                <div class="skill">ES6</div>
+                <div class="skill">Jquery</div>
+              </div>
+              <img src="./img/v-era.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="https://axelerleo.github.io/v-era/" target="blank">
+                  <p>V-ERA</p>
+                  <p>
+                    <span class="rus">Лэндинг пейдж студии 3D визуализации</span>
+                    <span class="english">Landing page for 3d visualisation studio</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">Design</div>
+                <div class="skill">Content</div>
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+              </div>
+              <img src="./img/ortea.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="https://axelerleo.github.io/ortea/" target="blank">
+                  <p>Ortea</p>
+                  <p>
+
+                    <span class="rus">Небольшой сайт организации, торгующей стабилизаторами напряжения</span>
+                    <span class="english">Small business site for organization that sells voltage
+                      stabilizers</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">React</div>
+                <div class="skill">Redux</div>
+                <div class="skill">ES6</div>
+                <div class="skill">Firebase</div>
+                <div class="skill">Webpack</div>
+                <div class="skill">Node JS</div>
+              </div>
+              <img src="./img/burgerbuilder.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="http://axelerleoburgerbuilder.herokuapp.com/" target="blank">
+                  <p>Burger builder</p>
+                  <p>
+
+                    <span class="rus">Одностраничное веб-приложение с простой авторизацией и системой заказов. В
+                      качестве бэкэнда = firebase</span>
+                    <span class="english">SPA constructor of burgers with simple authorisation and
+                      orders. Backend on firebase</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">Responsive</div>
+                <div class="skill">npm</div>
+              </div>
+              <img src="./img/natours.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="https://axelerleo.github.io/natours/" target="blank">
+                  <p>Natours</p>
+                  <p>
+
+                    <span class="rus">Верстка посадочной страницы агентства путешествий</span>
+                    <span class="english">Layout of landing page for travel agency.</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">Flexbox</div>
+                <div class="skill">Responsive</div>
+                <div class="skill">npm</div>
+              </div>
+              <img src="./img/trillo.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="https://axelerleo.github.io/trillo/" target="blank">
+                  <p>Trillo</p>
+                  <p>
+
+                    <span class="rus">Верстка посадочной страницы сервиса бронирования отелей</span>
+                    <span class="english">Layout of landing page for hotel booking service.</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="skill-container">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS Grid</div>
+                <div class="skill">Responsive</div>
+                <div class="skill">npm</div>
+              </div>
+              <img src="./img/lux-realt.png" />
+              <div class="project-card-footer">
+                <a class="project-link" href="https://axelerleo.github.io/luxrealt/" target="blank">
+                  <p>LuxRealt</p>
+                  <p>
+
+                    <span class="rus">Верстка посадочной страницы агентства элитной недвижимости</span>
+                    <span class="english">Layout of landing page for real eastate agency.</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="anchor-about">
+        <div class="parallax about__header">
+          <div class="block">
+            <img src="./img/about.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10" />
+            <h3 data-speed="-2" class="heading-3 text-parallax">
+              <span class="rus">Немного о навыках и умениях </span>
+              <span class="english">Shortly about my skills and abilities</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="about__container">
+          <div class="about__container-text">
+            <p class="about__text paragraph black mb-sm">
+              <span class="rus">
+                Далее идет некоторая техническая информация - если Вас
+                интересует, подхожу ли я Вашему проекту по навыкам, милости
+                прошу! Либо просто покрутите сферу со словами справа, и смело
+                двигайтесь в Портфолио!
               </span>
-              <span class="english"></span>
+              <span class="english"> Then there is some technical information - if You are interested in whether I fit
+                Your project skills, welcome! Or just twist the sphere with the words on the right, and boldly move to
+                the Portfolio!</span>
+            </p>
+
+            <p class="about__text paragraph black mb-sm">
+              <span class="rus">
+                Я верстаю адаптивные сайты испльзуя bootstrap4, grid, flexbox и
+                старые добрые медиа запросы. Быстро вникаю в суть задачи, и
+                подбираю подходящий <s> велосипед</s> инструмент. Использую
+                все современные возможности html5 и css3, а там где их не
+                хватает - на помощь приходит javascript.
+              </span>
+              <span class="english"> I make up responsive websites using bootstrap4, grid, flexbox and good old media
+                queries. Quickly delve into the essence of the problem, and select a suitable <s>bikeshed</s> tool. I
+                use all the modern features of html5 and css3, and where they are not enough - comes to the aid of
+                javascript.</span>
+            </p>
+            <p class="about__text paragraph black mb-sm">
+              <span class="rus">
+                Я разрабатываю SPA-приложения на стеке технологий react+redux.
+                Вспомогательных библиотек, плагинов и пакетов так много, и под
+                каждый проект они бывают разные, что даже не возьмусь
+                перечислять. Из основных: nodejs/npm, next, react router.
+              </span>
+              <span class="english"> I develop SPA applications on the react+redux technology stack. There are so many
+                auxiliary libraries, plugins and packages, and they are different for each project, that I will not
+                even undertake to list them. Of the main: nodejs/npm, next, react router.</span>
+            </p>
+            <p class="about__text paragraph black mb-sm">
+              <span class="rus">
+                В работе также использую множество вспомогательных
+                инструментов - на сайте Вы их не увидите, но именно благодаря
+                им процесс проходит быстрее, качественнее и эффективнее. Это
+                webpack, browserify, babel, npm scripts, emmet, eslint и много
+                чего еще. Также стоит упомянуть о средствах тестирования -
+                юнит-тестирование делаю на chai/mocha/enzyme, но при
+                необходимости не составит труда разобраться в других тестовых
+                фреймворках, если они используются в Вашем проекте.
+              </span>
+              <span class="english"> I also use a lot of auxiliary tools - you will not see them on the website, but
+                thanks to them the process is faster, better and more efficient. This is webpack, browserify, babel,
+                npc scripts, emmet, eslint, and much more. It is also worth mentioning about the testing tools - unit
+                testing is done on chai/mocha/enzyme, but if necessary, it will not be difficult to understand other
+                test frameworks, if they are used in Your project.</span>
+            </p>
+            <p class="about__text paragraph black mb-sm">
+              <span class="rus">
+                Помимо фронтэнда, я могу реализовать и серверную часть сайта.
+                Для бэкенда использую nodejs, базы данных firebase, MongoDB,
+                могу разобраться в любом API (идеально, если есть к нему
+                документация) - RESTful, JSON API, GraphQL.
+              </span>
+              <span class="english"> In addition to the frontend, I can implement the server part of the site.
+                For the backend I use node js, firebase, MongoDB databases, I can understand any API (ideally, if there
+                is documentation for it) - RESTful, JSON API, GraphQL.</span>
             </p>
           </div>
-          <div class="avatar-wrapper">
-            <img src="./img/avatar.jpg" alt="" class="avatar" />
-          </div>
-        </section>
-
-        <section class="portfolio" id="anchor-portfolio">
-          <div class="parallax portfolio__header">
-            <div class="block">
-              <img
-                src="./img/portfolio.jpg"
-                data-speed="1"
-                class="img-parallax main-parallax luxy-el "
-                data-speed-y="-10"
-              />
-              <h3 data-speed="-2" class="heading-3 text-parallax">
-                <span class="rus">Портфолио</span>
-                <span class="english">Portfolio</span>
-              </h3>
-            </div>
-          </div>
-          <div class="portfolio-container">
-            <div class="projects-container">
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">HTML5</div>
-                  <div class="skill">Slick</div>
-                  <div class="skill">ES6</div>
-                  <div class="skill">Jquery</div>
-                </div>
-                <img src="./img/v-era.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="https://axelerleo.github.io/v-era/"
-                    target="blank"
-                  >
-                    <p>V-ERA</p>
-                    <p>Landing page for 3d visualisation studio</p>
-                  </a>
-                </div>
-              </div>
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">Design</div>
-                  <div class="skill">Content</div>
-                  <div class="skill">HTML5</div>
-                  <div class="skill">CSS3</div>
-                </div>
-                <img src="./img/ortea.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="https://axelerleo.github.io/ortea/"
-                    target="blank"
-                  >
-                    <p>Ortea</p>
-                    <p>
-                      Small business site for organization that sells voltage
-                      stabilizers
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">React</div>
-                  <div class="skill">Redux</div>
-                  <div class="skill">ES6</div>
-                  <div class="skill">Firebase</div>
-                  <div class="skill">Webpack</div>
-                  <div class="skill">Node JS</div>
-                </div>
-                <img src="./img/burgerbuilder.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="http://axelerleoburgerbuilder.herokuapp.com/"
-                    target="blank"
-                  >
-                    <p>Burger builder</p>
-                    <p>
-                      SPA constructor of burgers with simple authorisation and
-                      orders. Backend on firebase
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">HTML5</div>
-                  <div class="skill">CSS3</div>
-                  <div class="skill">Responsive</div>
-                  <div class="skill">npm</div>
-                </div>
-                <img src="./img/natours.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="https://axelerleo.github.io/natours/"
-                    target="blank"
-                  >
-                    <p>Natours</p>
-                    <p>
-                      Landing page for travel agency. Layout based on floats
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">HTML5</div>
-                  <div class="skill">Flexbox</div>
-                  <div class="skill">Responsive</div>
-                  <div class="skill">npm</div>
-                </div>
-                <img src="./img/trillo.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="https://axelerleo.github.io/trillo/"
-                    target="blank"
-                  >
-                    <p>Trillo</p>
-                    <p>
-                      Landing page for hotel booking service. Layout based on
-                      flexbox
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div class="project-box">
-                <div class="skill-container">
-                  <div class="skill">HTML5</div>
-                  <div class="skill">CSS Grid</div>
-                  <div class="skill">Responsive</div>
-                  <div class="skill">npm</div>
-                </div>
-                <img src="./img/lux-realt.png" />
-                <div class="project-card-footer">
-                  <a
-                    class="project-link"
-                    href="https://axelerleo.github.io/luxrealt/"
-                    target="blank"
-                  >
-                    <p>LuxRealt</p>
-                    <p>
-                      Landing page for real eastate agency. Layout based on CSS
-                      grid
-                    </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="about" id="anchor-about">
-          <div class="parallax about__header">
-            <div class="block">
-              <img
-                src="./img/about.jpg"
-                data-speed="1"
-                class="img-parallax main-parallax luxy-el"
-                data-speed-y="-10"
-              />
-              <h3 data-speed="-2" class="heading-3 text-parallax">
-                <span class="rus">Немного о навыках и умениях </span>
-                <span class="english"
-                  >Shortly about my skills and abilities</span
-                >
-              </h3>
-            </div>
-          </div>
-
-          <div class="about__container">
-            <div class="about__container-text">
-              <p class="about__text paragraph black mb-sm">
-                <span class="rus">
-                  Далее идет некоторая техническая информация - если Вас
-                  интересует, подхожу ли я Вашему проекту по навыкам, милости
-                  прошу! Либо просто покрутите сферу со словами справа, и смело
-                  двигайтесь в Портфолио!
-                </span>
-                <span class="english"> </span>
+          <div id="myCanvasContainer">
+            <canvas width="500" height="500" id="myCanvas">
+              <p>
+                Anything in here will be replaced on browsers that support the
+                canvas element
               </p>
-
-              <p class="about__text paragraph black mb-sm">
-                <span class="rus">
-                  Я владею адаптивной версткой - bootstrap4, grid, flexbox и
-                  старые добрые медиа запросы. Быстро вникаю в суть задачи, и
-                  подбираю подходящий <s> велосипед</s> инструмент. Использую
-                  все современные возможности html5 и css3, а там где их не
-                  хватает - на помощь приходит javascript.
-                </span>
-                <span class="english"> </span>
-              </p>
-              <p class="about__text paragraph black mb-sm">
-                <span class="rus">
-                  Я разрабатываю SPA-приложения на стеке технологий react+redux.
-                  Вспомогательных библиотек, плагинов и пакетов так много, и под
-                  каждый проект они бывают разные, что даже не возьмусь
-                  перечислять. Из основных: nodejs/npm, next, react router.
-                </span>
-                <span class="english"> </span>
-              </p>
-              <p class="about__text paragraph black mb-sm">
-                <span class="rus">
-                  В работе также использую множество вспомогательных
-                  инструментов - на сайте Вы их не увидите, но именно благодаря
-                  им процесс проходит быстрее, качественнее и эффективнее. Это
-                  webpack, browserify, babel, npm scripts, emmet, eslint и много
-                  чего еще. Также стоит упомянуть о средствах тестирования -
-                  юнит-тестирование делаю на chai/mocha/enzyme, но при
-                  необходимости не составит труда разобраться в других тестовых
-                  фреймворках, если они используются в Вашем проекте.
-                </span>
-                <span class="english"> </span>
-              </p>
-              <p class="about__text paragraph black mb-sm">
-                <span class="rus">
-                  Помимо фронтэнда, я могу реализовать и серверную часть сайта.
-                  Для бэкенда использую nodejs, базы данных firebase, MongoDB,
-                  могу разобраться в любом API (идеально, если есть к нему
-                  документация) - RESTful, JSON API, GraphQL.
-                </span>
-                <span class="english"> </span>
-              </p>
-            </div>
-            <div id="myCanvasContainer">
-              <canvas width="500" height="500" id="myCanvas">
-                <p>
-                  Anything in here will be replaced on browsers that support the
-                  canvas element
-                </p>
-              </canvas>
-            </div>
-            <div id="tags">
-              <ul>
-                <li>
-                  <a href="http://www.google.com" target="_blank">Google</a>
-                </li>
-                <li><a href="/js">javascript</a></li>
-                <li><a href="/babel">babel</a></li>
-                <li><a href="/npm">npm</a></li>
-                <li>
-                  <a href="/nodejs">nodejs</a>
-                </li>
-                <li>
-                  <a href="/webpack">webpack</a>
-                </li>
-                <li>
-                  <a href="/reactjs">ReactJs</a>
-                </li>
-                <li>
-                  <a href="/redux">redux</a>
-                </li>
-                <li>
-                  <a href="/nextjs">nextjs</a>
-                </li>
-                <li>
-                  <a href="/firebase">firebase</a>
-                </li>
-                <li>
-                  <a href="/mongoDB">mongoDB</a>
-                </li>
-                <li>
-                  <a href="/jest">jest</a>
-                </li>
-                <li>
-                  <a href="/git">git</a>
-                </li>
-                <li>
-                  <a href="/enzyme">enzyme</a>
-                </li>
-                <li>
-                  <a href="/html5">HTML5</a>
-                </li>
-                <li>
-                  <a href="/css">CSS</a>
-                </li>
-                <li>
-                  <a href="/jquery">jquery</a>
-                </li>
-                <li>
-                  <a href="/GraphQL">GraphQL</a>
-                </li>
-                <li>
-                  <a href="/Parcel">Parcel</a>
-                </li>
-                <li>
-                  <a href="/emmet">emmet</a>
-                </li>
-              </ul>
-            </div>
+            </canvas>
           </div>
-        </section>
-
-        <section class="contacts" id="anchor-contacts">
-          <div class="parallax contacts__header">
-            <div class="block">
-              <img
-                src="./img/contacts.jpg"
-                data-speed="1"
-                class="img-parallax main-parallax luxy-el"
-                data-speed-y="-10"
-                data-offset="400"
-              />
-              <h3 data-speed="-2" class="heading-3 text-parallax">
-                <span class="rus">Контакты</span>
-                <span class="english">Contacts</span>
-              </h3>
-            </div>
+          <div id="tags">
+            <ul>
+              <li>
+                <a href="http://www.google.com" target="_blank">Google</a>
+              </li>
+              <li><a href="/js">javascript</a></li>
+              <li><a href="/babel">babel</a></li>
+              <li><a href="/npm">npm</a></li>
+              <li>
+                <a href="/nodejs">nodejs</a>
+              </li>
+              <li>
+                <a href="/webpack">webpack</a>
+              </li>
+              <li>
+                <a href="/reactjs">ReactJs</a>
+              </li>
+              <li>
+                <a href="/redux">redux</a>
+              </li>
+              <li>
+                <a href="/nextjs">nextjs</a>
+              </li>
+              <li>
+                <a href="/firebase">firebase</a>
+              </li>
+              <li>
+                <a href="/mongoDB">mongoDB</a>
+              </li>
+              <li>
+                <a href="/jest">jest</a>
+              </li>
+              <li>
+                <a href="/git">git</a>
+              </li>
+              <li>
+                <a href="/enzyme">enzyme</a>
+              </li>
+              <li>
+                <a href="/html5">HTML5</a>
+              </li>
+              <li>
+                <a href="/css">CSS</a>
+              </li>
+              <li>
+                <a href="/jquery">jquery</a>
+              </li>
+              <li>
+                <a href="/GraphQL">GraphQL</a>
+              </li>
+              <li>
+                <a href="/Parcel">Parcel</a>
+              </li>
+              <li>
+                <a href="/emmet">emmet</a>
+              </li>
+            </ul>
           </div>
-          <div class="contacts__container">
-            <div class="contacts__container__icon ">
-              <div class="effect egeon">
-                <a href="#" class="email effect egeon" title="Email me"
-                  ><i class="icon fa fa-envelope" aria-hidden="true"></i
-                ></a>
-              </div>
-            </div>
+        </div>
+      </section>
 
-            <div class="contacts__container-text black">
-              <span class="rus">Почта: axelerleo@yandex.ru</span>
-              <span class="english">e-mail: axelerleo@yandex.ru</span>
-            </div>
-            <div class="contacts__container__icon">
-              <div class="effect egeon">
-                <a href="#" class="skype effect egeon" title="Find me in skype"
-                  ><i class="icon fa fa-skype" aria-hidden="true"></i
-                ></a>
-              </div>
-            </div>
-            <div class="contacts__container-text black">
-              <span class="rus">Skype: axelerleo</span>
-              <span class="english">Skype: axelerleo</span>
-            </div>
-            <div class="contacts__container__icon">
-              <div class="effect egeon">
-                <a
-                  href="#"
-                  class="github effect egeon"
-                  title="my github profile"
-                  ><i class="icon fa fa-github" aria-hidden="true"></i
-                ></a>
-              </div>
-            </div>
-            <div class="contacts__container-text black">
-              <span class="rus"
-                >Github:
-                <a href="https://github.com/axelerleo">axelerleo</a></span
-              >
-              <span class="english"
-                >Github:
-                <a href="https://github.com/axelerleo">axelerleo</a></span
-              >
-            </div>
-            <div class="contacts__container__icon rus">
-              <div class="effect egeon">
-                <a href="#" class="phone effect egeon" title="Find me in skype"
-                  ><i class="icon fa fa-phone" aria-hidden="true"></i
-                ></a>
-              </div>
-            </div>
-            <div class="contacts__container-text black">
-              <span class="rus">Тел.: +7 (989) 293-34-09</span>
-              <!-- <span class="english">Phone: axelerleo</span> -->
+      <section class="contacts" id="anchor-contacts">
+        <div class="parallax contacts__header">
+          <div class="block">
+            <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
+              data-offset="400" />
+            <h3 data-speed="-2" class="heading-3 text-parallax">
+              <span class="rus">Контакты</span>
+              <span class="english">Contacts</span>
+            </h3>
+          </div>
+        </div>
+        <div class="contacts__container">
+          <div class="contacts__container__icon ">
+            <div class="effect egeon">
+              <a href="#" class="email effect egeon" title="Email me"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="book" id="anchor-book">
-            <div class="book__form">
-              <form
-                action="//formspree.io/axelerleo@yandex.ru"
-                method="POST"
-                class="form"
-              >
-                <div class="mb-sm">
-                  <h2 class="heading-secondary">
-                    Возникли вопросы? Оставьте сообщение в форме ниже!
-                  </h2>
-                </div>
-                <div class="form__group">
-                  <input
-                    type="text"
-                    class="form__input"
-                    name="name"
-                    placeholder="Full Name"
-                    id="name"
-                    required
-                  />
-                  <label for="name" class="form__label">Full Name</label>
-                </div>
-
-                <div class="form__group">
-                  <input
-                    type="email"
-                    class="form__input"
-                    name="e-mail"
-                    placeholder="E-mail address"
-                    id="email"
-                    required
-                  />
-                  <label for="email" class="form__label">E-mail address</label>
-                </div>
-                <div class="form__group u-margin-bottom-middle">
-                  <textarea
-                    class="form__input"
-                    placeholder="Ваш вопрос"
-                    name="question"
-                    id="name"
-                  ></textarea>
-                  <label for="name" class="form__label">Ваш вопрос</label>
-                </div>
-                <input style="display: none;" name="_gotcha" type="text" />
-                <input name="_next" type="hidden" value="#" />
-                <div class="form-group">
-                  <button class="btn">
-                    <span class="rus">Отправить </span>
-                    <span class="english">Send</span> &rarr;
-                  </button>
-                </div>
-              </form>
+          <div class="contacts__container-text black">
+            <span class="rus">Почта: axelerleo@yandex.ru</span>
+            <span class="english">e-mail: axelerleo@yandex.ru</span>
+          </div>
+          <div class="contacts__container__icon">
+            <div class="effect egeon">
+              <a href="#" class="skype effect egeon" title="Find me in skype"><i class="icon fa fa-skype" aria-hidden="true"></i></a>
             </div>
           </div>
-        </section>
-        <footer class="footer"></footer>
-        <p class="copyright">&copy; Copyright by Alexey Leonov, 2019</p>
+          <div class="contacts__container-text black">
+            <span class="rus">Skype: axelerleo</span>
+            <span class="english">Skype: axelerleo</span>
+          </div>
+          <div class="contacts__container__icon">
+            <div class="effect egeon">
+              <a href="#" class="github effect egeon" title="my github profile"><i class="icon fa fa-github"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="contacts__container-text black">
+            <span class="rus">Github:
+              <a href="https://github.com/axelerleo">axelerleo</a></span>
+            <span class="english">Github:
+              <a href="https://github.com/axelerleo">axelerleo</a></span>
+          </div>
+          <div class="contacts__container__icon rus">
+            <div class="effect egeon">
+              <a href="#" class="phone effect egeon" title="Find me in skype"><i class="icon fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="contacts__container-text black">
+            <span class="rus">Тел.: +7 (989) 293-34-09</span>
+            <!-- <span class="english">Phone: axelerleo</span> -->
+          </div>
+          <div class="contacts__container__icon rus">
+            <div class="effect egeon">
+              <a href="#" class="phone effect egeon" title="Find me in skype"><i class="icon fa fa-whatsapp"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="contacts__container-text black">
+            <span class="rus">whatsapp.: +7 (989) 293-34-09</span>
+            <!-- <span class="english">Phone: axelerleo</span> -->
+          </div>
+        </div>
 
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script
-          src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-          crossorigin="anonymous"
-        ></script>
+        <div class="book" id="anchor-book">
+          <div class="book__form">
+            <form action="//formspree.io/axelerleo@yandex.ru" method="POST" class="form">
+              <div class="mb-sm">
+                <h2 class="heading-secondary">
 
-        <script src="js/scripts.js"></script>
-      </div>
-    </main>
-  </body>
+                  <span class="rus">Возникли вопросы? Оставьте сообщение в форме ниже!</span>
+                  <span class="english">Any questions? Leave a message in the form below!</span>
+                </h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" name="name" placeholder="Full Name" id="name" required />
+                <label for="name" class="form__label">Full Name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" name="e-mail" placeholder="E-mail address" id="email" required />
+                <label for="email" class="form__label">E-mail address</label>
+              </div>
+              <div class="form__group u-margin-bottom-middle">
+                <textarea class="form__input" placeholder="Your question" name="question" id="name"></textarea>
+                <label for="name" class="form__label"><span class="rus">Ваш вопрос</span>
+                  <span class="english">Your question</span></label>
+              </div>
+              <input style="display: none;" name="_gotcha" type="text" />
+              <input name="_next" type="hidden" value="#" />
+              <div class="form-group">
+                <button class="btn">
+                  <span class="rus">Отправить </span>
+                  <span class="english">Send</span> &rarr;
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer"></footer>
+      <p class="copyright">&copy; Copyright by Alexey Leonov, 2019</p>
+
+      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+
+      <script src="js/scripts.js"></script>
+    </div>
+  </main>
+</body>
+
 </html>

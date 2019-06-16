@@ -11,9 +11,13 @@
   width: 70vw;
   display: grid;
   z-index: 100;
-  grid-template-columns: minmax(min-content, max-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content) 1fr 1fr;
   align-content: center;
   align-items: center;
+  &__contacts {
+    justify-self: end;
+    font-size: 1.5rem;
+  }
   @media only screen and (max-width: 87.5em) {
     grid-column: 1/-1;
   }
