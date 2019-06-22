@@ -1,10 +1,17 @@
 .services {
   display: flex;
+  @media only screen and (max-width: 75em) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
   margin-top: 5rem;
   margin-bottom: 5rem;
   height: max-content;
   &__text {
     font-size: 2rem;
+    // @include respond(tab-port) {
+    //   font-size: 1.4rem;
+    // }
   }
   &__list {
     font-size: 2rem;
@@ -24,15 +31,25 @@
     object-fit: contain;
 
     margin-right: 2rem;
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
   }
   &--text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 40rem;
+    @include respond(tab-port) {
+      width: 25rem;
+      font-size: 1.3rem;
+    }
   }
   &--description {
     margin-bottom: 3rem;
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
   &--price {
     align-self: flex-end;
@@ -65,6 +82,9 @@
     0 60%,
     10% 20%
   );
+  @include respond(tab-port) {
+    margin-bottom: 3rem;
+  }
 }
 
 .avatar-wrapper {
@@ -83,6 +103,10 @@
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   font-size: 1.5rem;
   font-family: $font-paragraph;
+  @include respond(tab-port) {
+    width: 98%;
+    margin: 3rem 3px;
+  }
 }
 .tabs section {
   display: none;
@@ -90,6 +114,9 @@
   position: absolute;
   top: 0;
   left: 180px;
+  @include respond(tab-port) {
+    left: 135px;
+  }
 }
 
 .tabs input {

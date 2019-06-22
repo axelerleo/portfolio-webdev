@@ -37,6 +37,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 40vh;
+  @include respond(tab-port) {
+    height: 20vh;
+  }
+}
+
+.mobile {
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+.desktop {
+  display: block;
+  @include respond(tab-port) {
+    display: none;
+  }
 }
 
 html,

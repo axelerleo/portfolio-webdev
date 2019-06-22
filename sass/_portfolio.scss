@@ -2,12 +2,13 @@
 @import "./abstracts/mixins";
 
 .portfolio {
-  // grid-row: 5/6;
-  // grid-column: 1/3;
   position: static;
-  &__header {
-    height: 40vh;
-  }
+  // &__header {
+  //   height: 40vh;
+  //   @include respond(tab-port) {
+  //     height: 20vh;
+  //   }
+  // }
 
   &__container {
     margin: 13rem;

@@ -9,13 +9,24 @@
 .paragraph {
   font-family: $font-paragraph;
   margin-left: 5rem;
+  text-align: justify;
+  @include respond(tab-port) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .heading-1 {
   @extend %heading;
   font-size: 4.5rem;
-  // color: $color-primary;
+
   line-height: 1;
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+  @include respond(tab-port) {
+    font-size: 3.4rem;
+  }
 }
 .heading-2 {
   @extend %heading;
@@ -34,8 +45,11 @@
 .heading-3 {
   @extend %heading;
   font-size: 4.5rem;
-  // color: $color-primary;
+
   text-transform: uppercase;
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
 }
 .heading-4 {
   @extend %heading;

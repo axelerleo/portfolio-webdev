@@ -19,7 +19,7 @@
   <title>Alexey Leonov web developer</title>
   <script src="js/tagcanvas.js"></script>
   <script src="js/luxy.js"></script>
-  <script src="js/smooth-scrollbar.js"></script>
+  
 </head>
 
 <body>
@@ -39,13 +39,14 @@
               <span class="english">Home</span></a>
           </li>
           <li class="menu__item">
-            <a href="#anchor-about" class="menu__link"><span class="rus">Обо мне</span>
-              <span class="english">About</span></a>
-          </li>
-          <li class="menu__item">
             <a href="#anchor-services" class="menu__link"><span class="rus">Услуги</span>
               <span class="english">Services</span></a>
           </li>
+          <li class="menu__item">
+            <a href="#anchor-about" class="menu__link"><span class="rus">Обо мне</span>
+              <span class="english">About</span></a>
+          </li>
+          
           <li class="menu__item">
             <a href="#anchor-portfolio" class="menu__link"><span class="rus">Портфолио</span>
               <span class="english">Portfolio</span></a>
@@ -55,14 +56,17 @@
               <span class="english">Contacts</span></a>
           </li>
         </ul>
-        <div class="header__contacts">
-          <span class="rus"><i class="fa fa-phone fa-7x"></i><i class="fa fa-whatsapp fa-7x"></i> +7 (989)-293-34-09</span>
-          <span class="english"></span>
+        <div class="row-2">
+          <div class="header__contacts">
+            <span class="rus"><i class="fa fa-phone fa-7x"></i> <i class="fa fa-whatsapp fa-7x"></i> +7 (989)-293-34-09</span>
+            <span class="english"></span>
+          </div>
+          <div class="ru-eng">
+            <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
+            <div class="lang-btn eng-btn" lang=".english">Eng</div>
+          </div>
         </div>
-        <div class="ru-eng">
-          <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
-          <div class="lang-btn eng-btn" lang=".english">Eng</div>
-        </div>
+        
       </header>
 
       <section class="home">
@@ -87,7 +91,7 @@
           <path class="a2" d="M0 20 L50 52 L100 20"></path>
         </svg>
       </section>
-      <section class="services">
+      <section class="services" id = "anchor-services">
         <div class="services__container">
           <p class="services__text paragraph black mb-sm">
             <span class="rus">
@@ -258,7 +262,7 @@
       <section class="portfolio" id="anchor-portfolio">
         <div class="parallax portfolio__header">
           <div class="block">
-            <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" />
+            <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" data-offset="400" />
             <h3 data-speed="-2" class="heading-3 text-parallax">
               <span class="rus">Портфолио</span>
               <span class="english">Portfolio</span>
@@ -392,7 +396,8 @@
       <section class="about" id="anchor-about">
         <div class="parallax about__header">
           <div class="block">
-            <img src="./img/about.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10" />
+            <img src="./img/about.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
+            data-offset="200" />
             <h3 data-speed="-2" class="heading-3 text-parallax">
               <span class="rus">Немного о навыках и умениях </span>
               <span class="english">Shortly about my skills and abilities</span>
@@ -406,11 +411,11 @@
               <span class="rus">
                 Далее идет некоторая техническая информация - если Вас
                 интересует, подхожу ли я Вашему проекту по навыкам, милости
-                прошу! Либо просто покрутите сферу со словами справа, и смело
+                прошу! Либо просто покрутите сферу со словами, и смело
                 двигайтесь в Портфолио!
               </span>
               <span class="english"> Then there is some technical information - if You are interested in whether I fit
-                Your project skills, welcome! Or just twist the sphere with the words on the right, and boldly move to
+                Your project skills, welcome! Or just twist the sphere with the words, and boldly move to
                 the Portfolio!</span>
             </p>
 
@@ -537,7 +542,7 @@
       </section>
 
       <section class="contacts" id="anchor-contacts">
-        <div class="parallax contacts__header">
+        <div class="parallax contacts__header desktop">
           <div class="block">
             <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
               data-offset="400" />
@@ -547,6 +552,16 @@
             </h3>
           </div>
         </div>
+        <div class="parallax contacts__header mobile">
+            <div class="block">
+              <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
+                data-offset="800" />
+              <h3 data-speed="-2" class="heading-3 text-parallax">
+                <span class="rus">Контакты</span>
+                <span class="english">Contacts</span>
+              </h3>
+            </div>
+          </div>
         <div class="contacts__container">
           <div class="contacts__container__icon ">
             <div class="effect egeon">

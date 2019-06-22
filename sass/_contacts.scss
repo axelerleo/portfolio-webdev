@@ -1,7 +1,7 @@
 .contacts {
-  &__header {
-    height: 40vh;
-  }
+  // &__header {
+  //   height: 40vh;
+  // }
   &__container {
     display: grid;
     width: 60%;
@@ -10,10 +10,16 @@
     grid-template-rows: repeat(4, 7rem);
     margin: 5rem auto;
     grid-gap: 2rem;
-
     align-items: center;
+    @include respond(tab-port) {
+      width: 90%;
+      grid-template-columns: 10rem 1fr;
+    }
     &-text {
       font-size: 4rem;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -56,13 +56,12 @@
 
     if (scrolled > coords) {
       upDownBtn.classList.add("up_down_btn-show");
-      
+
       upDownBtn.setAttribute("title", "Наверх");
       upDownBtn.classList.add("up_down_btn-up");
       check = false;
     }
     if (scrolled === 0) {
-      
       upDownBtn.setAttribute("title", "Вниз");
       upDownBtn.classList.remove("up_down_btn-up");
       check = true;
@@ -85,10 +84,8 @@
       return;
     } else if (check) {
       (function goBottom() {
-        
-          window.scrollTo(0, coordsY);
-          upDownBtn.classList.remove("up_down_btn-disabled");
-        
+        window.scrollTo(0, coordsY);
+        upDownBtn.classList.remove("up_down_btn-disabled");
       })();
       return;
     }
@@ -102,7 +99,7 @@
 
 $(function() {
   $("a[href^='#'], div[href^='#']").click(function() {
-    let link = this;
+    var link = this;
     if (this.tagName == "DIV") {
       link = this.querySelector("a");
     }
