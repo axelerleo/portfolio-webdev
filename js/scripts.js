@@ -136,6 +136,21 @@ window.addEventListener("load", function() {
     document.getElementById("myCanvasContainer").style.display = "none";
   }
 
+  try {
+    TagCanvas.Start("myCanvasMob", "tags", {
+      textColour: "rgb(230, 81, 11)",
+      outlineColour: "rgb(59, 128, 28)",
+      reverse: true,
+      depth: 1.0,
+      maxSpeed: 0.05,
+      freezeActive: true,
+      wheelZoom: false
+    });
+  } catch (e) {
+    // something went wrong, hide the canvas container
+    document.getElementById("myCanvasContainerMob").style.display = "none";
+  }
+
   luxy.init({
     wrapper: "#luxy",
     targets: ".luxy-el",

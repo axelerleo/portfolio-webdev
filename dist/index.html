@@ -13,11 +13,10 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  
+  <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
 
   <title>Alexey Leonov web developer</title>
-  
   
 </head>
 
@@ -45,7 +44,7 @@
             <a href="#anchor-about" class="menu__link"><span class="rus">Обо мне</span>
               <span class="english">About</span></a>
           </li>
-
+          
           <li class="menu__item">
             <a href="#anchor-portfolio" class="menu__link"><span class="rus">Портфолио</span>
               <span class="english">Portfolio</span></a>
@@ -55,14 +54,17 @@
               <span class="english">Contacts</span></a>
           </li>
         </ul>
-        <div class="header__contacts">
-          <span class="rus"><i class="fa fa-phone fa-7x"></i><i class="fa fa-whatsapp fa-7x"></i> +7 (989)-293-34-09</span>
-          <span class="english"></span>
+        <div class="row-2">
+          <div class="header__contacts">
+            <span class="rus"><i class="fa fa-phone fa-7x"></i> <i class="fa fa-whatsapp fa-7x"></i> +7 (989)-293-34-09</span>
+            <span class="english"></span>
+          </div>
+          <div class="ru-eng">
+            <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
+            <div class="lang-btn eng-btn" lang=".english">Eng</div>
+          </div>
         </div>
-        <div class="ru-eng">
-          <div class="lang-btn rus-btn border" lang=".rus">Rus</div>
-          <div class="lang-btn eng-btn" lang=".english">Eng</div>
-        </div>
+        
       </header>
 
       <section class="home">
@@ -256,15 +258,24 @@
       </section>
 
       <section class="portfolio" id="anchor-portfolio">
-        <div class="parallax portfolio__header">
+        <div class="parallax portfolio__header desktop">
           <div class="block">
-            <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" />
+            <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" data-offset="400" />
             <h3 data-speed="-2" class="heading-3 text-parallax">
               <span class="rus">Портфолио</span>
               <span class="english">Portfolio</span>
             </h3>
           </div>
         </div>
+        <div class="parallax portfolio__header mobile">
+            <div class="block">
+              <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" data-offset="600" />
+              <h3 data-speed="-2" class="heading-3 text-parallax">
+                <span class="rus">Портфолио</span>
+                <span class="english">Portfolio</span>
+              </h3>
+            </div>
+          </div>
         <div class="portfolio-container">
           <div class="projects-container">
             <div class="project-box">
@@ -392,7 +403,8 @@
       <section class="about" id="anchor-about">
         <div class="parallax about__header">
           <div class="block">
-            <img src="./img/about.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10" />
+            <img src="./img/about.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
+            data-offset="200" />
             <h3 data-speed="-2" class="heading-3 text-parallax">
               <span class="rus">Немного о навыках и умениях </span>
               <span class="english">Shortly about my skills and abilities</span>
@@ -406,11 +418,11 @@
               <span class="rus">
                 Далее идет некоторая техническая информация - если Вас
                 интересует, подхожу ли я Вашему проекту по навыкам, милости
-                прошу! Либо просто покрутите сферу со словами справа, и смело
+                прошу! Либо просто покрутите сферу со словами, и смело
                 двигайтесь в Портфолио!
               </span>
               <span class="english"> Then there is some technical information - if You are interested in whether I fit
-                Your project skills, welcome! Or just twist the sphere with the words on the right, and boldly move to
+                Your project skills, welcome! Or just twist the sphere with the words, and boldly move to
                 the Portfolio!</span>
             </p>
 
@@ -467,7 +479,7 @@
                 is documentation for it) - RESTful, JSON API, GraphQL.</span>
             </p>
           </div>
-          <div id="myCanvasContainer">
+          <div id="myCanvasContainer" class = "desktop">
             <canvas width="500" height="500" id="myCanvas">
               <p>
                 Anything in here will be replaced on browsers that support the
@@ -475,6 +487,14 @@
               </p>
             </canvas>
           </div>
+          <div id="myCanvasContainerMob" class = "mobile">
+              <canvas width="300" height="300" id="myCanvasMob">
+                <p>
+                  Anything in here will be replaced on browsers that support the
+                  canvas element
+                </p>
+              </canvas>
+            </div>
           <div id="tags">
             <ul>
               <li>
@@ -537,7 +557,7 @@
       </section>
 
       <section class="contacts" id="anchor-contacts">
-        <div class="parallax contacts__header">
+        <div class="parallax contacts__header desktop">
           <div class="block">
             <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
               data-offset="400" />
@@ -547,6 +567,16 @@
             </h3>
           </div>
         </div>
+        <div class="parallax contacts__header mobile">
+            <div class="block">
+              <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
+                data-offset="900" />
+              <h3 data-speed="-2" class="heading-3 text-parallax">
+                <span class="rus">Контакты</span>
+                <span class="english">Contacts</span>
+              </h3>
+            </div>
+          </div>
         <div class="contacts__container">
           <div class="contacts__container__icon ">
             <div class="effect egeon">
@@ -638,12 +668,12 @@
       </section>
       <footer class="footer"></footer>
       <p class="copyright">&copy; Copyright by Alexey Leonov, 2019</p>
+
       <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 
-      <script type="text/javascript" src="js/scripts.min.js" crossorigin="anonymous"></script>
-      
+      <script src="js/scripts.min.js"></script>
     </div>
   </main>
 </body>

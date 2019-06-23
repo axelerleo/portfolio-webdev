@@ -44,6 +44,9 @@
       width: 25rem;
       font-size: 1.3rem;
     }
+    @include respond(phone) {
+      width: 23rem;
+    }
   }
   &--description {
     margin-bottom: 3rem;
@@ -117,6 +120,9 @@
   @include respond(tab-port) {
     left: 135px;
   }
+  @include respond(phone) {
+    left: 110px;
+  }
 }
 
 .tabs input {
@@ -130,6 +136,9 @@
   color: #4f5966;
   background: #dee8f2;
   cursor: pointer;
+  @include respond(phone) {
+    width: 15rem;
+  }
 }
 .tabs input:checked + label {
   color: white;

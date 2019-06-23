@@ -260,7 +260,7 @@
       </section>
 
       <section class="portfolio" id="anchor-portfolio">
-        <div class="parallax portfolio__header">
+        <div class="parallax portfolio__header desktop">
           <div class="block">
             <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" data-offset="400" />
             <h3 data-speed="-2" class="heading-3 text-parallax">
@@ -269,6 +269,15 @@
             </h3>
           </div>
         </div>
+        <div class="parallax portfolio__header mobile">
+            <div class="block">
+              <img src="./img/portfolio.jpg" data-speed="1" class="img-parallax main-parallax luxy-el " data-speed-y="-10" data-offset="600" />
+              <h3 data-speed="-2" class="heading-3 text-parallax">
+                <span class="rus">Портфолио</span>
+                <span class="english">Portfolio</span>
+              </h3>
+            </div>
+          </div>
         <div class="portfolio-container">
           <div class="projects-container">
             <div class="project-box">
@@ -472,7 +481,7 @@
                 is documentation for it) - RESTful, JSON API, GraphQL.</span>
             </p>
           </div>
-          <div id="myCanvasContainer">
+          <div id="myCanvasContainer" class = "desktop">
             <canvas width="500" height="500" id="myCanvas">
               <p>
                 Anything in here will be replaced on browsers that support the
@@ -480,6 +489,14 @@
               </p>
             </canvas>
           </div>
+          <div id="myCanvasContainerMob" class = "mobile">
+              <canvas width="300" height="300" id="myCanvasMob">
+                <p>
+                  Anything in here will be replaced on browsers that support the
+                  canvas element
+                </p>
+              </canvas>
+            </div>
           <div id="tags">
             <ul>
               <li>
@@ -555,7 +572,7 @@
         <div class="parallax contacts__header mobile">
             <div class="block">
               <img src="./img/contacts.jpg" data-speed="1" class="img-parallax main-parallax luxy-el" data-speed-y="-10"
-                data-offset="800" />
+                data-offset="900" />
               <h3 data-speed="-2" class="heading-3 text-parallax">
                 <span class="rus">Контакты</span>
                 <span class="english">Contacts</span>

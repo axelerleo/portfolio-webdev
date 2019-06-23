@@ -5,6 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 .project-box {
   position: relative;
@@ -15,6 +18,9 @@
   box-shadow: 3px 2px 17px 0px rgba(50, 50, 50, 0.9);
   background-color: #1c1d21;
   overflow: hidden;
+  @include respond(phone) {
+    height: 24.5rem;
+  }
 }
 .skill-container {
   width: 15rem;
@@ -26,6 +32,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
+  @include respond(phone) {
+    width: 23rem;
+    height: 15rem;
+  }
 }
 .skill {
   display: flex;
@@ -90,6 +100,10 @@
   margin: 0px;
   padding-left: 15px;
   padding-top: 15px;
+  @include respond(phone) {
+    padding-top: 5px;
+    line-height: 1;
+  }
 }
 .project-link:link,
 .project-link:visited {
@@ -101,9 +115,15 @@
   font-family: "Roboto Mono", monospace;
   font-size: 12px;
   margin-top: 0px;
+  @include respond(phone) {
+    font-size: 10px;
+  }
 }
 .project-box:hover .project-card-footer {
   transform: translateY(-65px);
+  @include respond(phone) {
+    transform: translateY(-110px);
+  }
 }
 .project-box:hover img {
   filter: grayscale(70%);

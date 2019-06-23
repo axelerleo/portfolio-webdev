@@ -11,9 +11,14 @@
     margin: 5rem auto;
     grid-gap: 2rem;
     align-items: center;
+
     @include respond(tab-port) {
       width: 90%;
       grid-template-columns: 10rem 1fr;
+    }
+    @include respond(phone) {
+      width: 90%;
+      grid-template-columns: 5rem 1fr;
     }
     &-text {
       font-size: 4rem;
@@ -41,6 +46,10 @@
     font-size: $font-size;
     overflow: hidden;
     position: relative;
+    @include respond(phone) {
+      width: 40px;
+      height: 40px;
+    }
 
     i {
       position: relative;

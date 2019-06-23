@@ -18,6 +18,9 @@
   &__contacts {
     margin-left: 5rem;
     font-size: 1.5rem;
+    @include respond(phone) {
+      margin-left: 3px;
+    }
   }
   @include respond(tab-land) {
     width: 80%;
@@ -42,6 +45,9 @@
   }
   @include respond(tab-port) {
     margin-bottom: 1rem;
+  }
+  @include respond(phone) {
+    margin-left: 3px;
   }
 
   grid-gap: 1rem;
